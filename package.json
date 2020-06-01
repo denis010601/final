@@ -1,23 +1,32 @@
 {
-  "name": "final",
+  "name": "deniska",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^4.0.2"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denis010601/final.git"
+    "url": "git+https://github.com/denis010601/deniska.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/denis010601/final/issues"
+    "url": "https://github.com/denis010601/deniska/issues"
   },
-  "homepage": "https://github.com/denis010601/final#readme"
+  "homepage": "https://github.com/denis010601/deniska#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "browser-sync": "^2.26.7",
+    "gulp-htmlmin": "^5.0.1"
+  }
 }

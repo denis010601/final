@@ -16,7 +16,7 @@ function bs() {
   });
   watch("./*.html").on('change', browserSync.reload);
   watch("./scss/**/*.scss", serveSass);
-  watch("./js/*.js").on('change', browserSync.reload);
+  watch("./js/**/*.js").on('change', browserSync.reload);
 };
 
 function mincss() {
@@ -67,7 +67,7 @@ function serveSass() {
       .pipe(autoprefixer({
         cascade: false
         }))
-      .pipe(dest("./js"))
+      .pipe(dest("./css"))
       .pipe(browserSync.stream());
 };
 
