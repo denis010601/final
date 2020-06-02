@@ -1,5 +1,11 @@
-
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $light;
+  z-index: 10;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -25,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 1.875rem 27px;
+  padding: 23px 0 27px;
   &__ul {
     padding: 0;
     padding-top: 0.375rem;

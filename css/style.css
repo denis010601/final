@@ -1,6 +1,31 @@
+@charset "UTF-8";
 .container {
   max-width: 1201px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 1.875rem;
+  position: relative; }
+
+.col {
+  display: flex;
+  flex-direction: column; }
+
+.col-47 {
+  max-width: 47%; }
+
+.col-48 {
+  max-width: 48%; }
+
+.col-49 {
+  max-width: 49%; }
+
+.col-50 {
+  max-width: 50%; }
+
+.col-51 {
+  max-width: 51%; }
+
+.col-52 {
+  max-width: 52%; }
 
 body {
   padding: 0;
@@ -10,6 +35,7 @@ body {
   box-sizing: border-box; }
 
 html {
+  font-family: "Roboto", sans-serif;
   font-size: 16px; }
 
 .phone {
@@ -21,6 +47,50 @@ html {
   .phone__black {
     color: #000000;
     font-weight: 700; }
+
+.color__blue {
+  color: #06bee1; }
+
+.button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer; }
+  .button__primary {
+    font-size: 16px;
+    box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32);
+    background-color: #0842b7;
+    color: #ffffff;
+    border: none;
+    transition: 0.2s; }
+    .button__primary:hover, .button__primary:active, .button__primary:checked {
+      box-shadow: none; }
+  .button__info {
+    font-size: 15px;
+    color: #0842b7;
+    border: 1px solid #0842b7;
+    background-color: transparent; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+  .row__bottom {
+    align-items: flex-start; }
+
+.align-start {
+  align-items: flex-start; }
+
+.light {
+  font-weight: 300; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10; }
 
 .logo {
   display: flex;
@@ -44,7 +114,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 1.875rem 27px; }
+  padding: 23px 0 27px; }
   .menu__ul {
     padding: 0;
     padding-top: 0.375rem;
@@ -84,5 +154,153 @@ html {
     margin-left: 3.125rem; }
 
 .hero {
+  padding: 15.4rem 0 20.4rem;
   background: url("../img/hero.png") no-repeat center;
-  height: 155vh; }
+  background-size: cover; }
+  .hero__name {
+    margin: 0;
+    margin-left: -5px;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 5.225rem‬;
+    color: #000000; }
+  .hero__title {
+    margin: 0;
+    margin-top: -3px;
+    font-size: 2.25rem;
+    font-weight: 300; }
+  .hero__description {
+    margin: 1.374rem 0 4rem;
+    max-width: 22.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.56rem; }
+  .hero__interaction {
+    display: flex;
+    margin-bottom: 17.2rem; }
+  .hero__button {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3.3125rem; }
+  .hero .button__primary {
+    padding: 0.9375rem 2.5rem;
+    word-spacing: -1px;
+    margin-bottom: 0.75rem; }
+  .hero .button__info {
+    padding: 0.9375rem 2.125rem;
+    word-spacing: -1px; }
+  .hero__offer {
+    margin: 0;
+    padding-top: 0.875rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8125rem;
+    max-width: 20.3125rem;
+    color: #0f1c2e; }
+
+.question {
+  padding-top: 1rem; }
+  .question .top {
+    margin-top: -21.4rem; }
+  .question__title-header {
+    margin: 0;
+    display: block;
+    max-width: 293px;
+    padding: 0.8125rem 1.4375rem 0.875rem 0.875rem;
+    color: #000000;
+    font-size: 2.3125rem;
+    font-weight: 300;
+    background-color: #ffffff; }
+  .question__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1.85rem; }
+  .question__info {
+    margin: 0;
+    margin-top: 10.37rem;
+    margin-left: -1.1rem;
+    margin-bottom: 2.7rem;
+    max-height: 100%;
+    font-size: 21.375rem;
+    font-weight: 100;
+    line-height: 5.056875rem;
+    letter-spacing: -1.06255rem; }
+  .question__percent {
+    margin-left: -2.31255rem;
+    font-size: 7rem;
+    font-weight: 100; }
+  .question__description {
+    margin-bottom: 0.5rem;
+    max-width: 16.9375rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8625rem;
+    color: #0f1c2e; }
+    .question__description-info {
+      max-width: 13.875rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem; }
+  .question .analysis {
+    margin-top: 1.0625rem; }
+  .question__text-title {
+    margin-top: 4.3rem;
+    margin-bottom: 0.5rem;
+    max-width: 11.8755rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8625rem;
+    color: #0f1c2e; }
+  .question__text-info {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #000000;
+    max-width: 16.8755rem; }
+  .question__offer {
+    width: 100%; }
+
+@media screen and (max-width: 1014px) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (max-width: 992px) {
+  .col-47, .col-48, .col-49, .col-50, .col-51, .col-52 {
+    min-width: 100%; }
+  .menu ul {
+    display: none; }
+  .question__info {
+    text-align: center; }
+  .question__row {
+    text-align: center;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .question__description {
+    text-align: center;
+    min-width: 100%; }
+    .question__description-info {
+      text-align: center;
+      min-width: 100%; }
+  .question__text-info {
+    max-width: 100%; }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .col {
+    align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; }
+  .hero__info {
+    display: flex;
+    flex-direction: column; }
+  .hero__interaction {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .hero__offer {
+    max-width: 100%; } }

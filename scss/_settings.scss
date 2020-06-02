@@ -8,6 +8,7 @@ body {
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 .phone {
@@ -24,3 +25,50 @@ html {
   }
 }
 
+.color{
+  &__blue {
+    color: $blue;
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  &__primary{
+    font-size: 16px;
+    box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32);
+    background-color: $primary;
+    color: $light;
+    border: none;
+    transition: 0.2s;
+    &:hover, &:active, &:checked {
+      box-shadow: none;
+    }
+  }
+  &__info {
+    font-size: 15px;
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: transparent;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  
+  &__bottom {
+    align-items: flex-start;
+  }
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.light {
+  font-weight: 300;
+}
