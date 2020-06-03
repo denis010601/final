@@ -67,11 +67,14 @@
   align-items: center;
 }
 .calculator {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  &::before {
+    display: none;
+  }
   br {
     display: none;
   }
-
-  
   &__row {
     flex-direction: column;
     justify-content: center;
