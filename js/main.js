@@ -1,19 +1,25 @@
 $(document).ready(function (){
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.benifit .swiper-container', {
   loop: true,
   centeredSlides: true,
-
   slidesPerView:3,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.benifit .swiper-button-next',
+    prevEl: '.benifit .swiper-button-prev',
   },
 })
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var title = $('.swiper-slide-next');
-
-  next.om(function(){
-    title.toggelClass('swiper-slide-next')
-  })
+var swiper = new Swiper('.lesson .swiper-container', {
+  loop: true,
+  navigation: {
+nextEl: '.lesson .swiper-button-next',
+prevEl: '.lesson .swiper-button-prev',
+},
+  pagination: {
+    el: '.lesson .swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
+});
 })
