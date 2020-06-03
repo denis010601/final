@@ -1,0 +1,27 @@
+.training {
+  padding-top: 7.6rem;
+  padding-bottom: 7.3rem;
+  background-image:url('../img/bg-training.png'),radial-gradient(circle 677px at center, #03256c 0%, #061826 100%);
+
+  
+
+  
+  &__header {
+      max-width: 460px;
+      margin: auto;
+      margin-bottom: 2.2rem;
+      text-align: center;
+      color: $light;
+      font-size: 1.5rem;
+      font-weight: 700;
+  }
+  .center__button {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    &--silver {
+      padding: 15px 33px;
+    }
+  }
+}

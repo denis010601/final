@@ -54,6 +54,12 @@ html {
     border: 1px solid $primary;
     background-color: transparent;
   }
+  &--silver {
+    font-size: 1rem;
+    color: $light;
+    border: 1px solid $light;
+    background-color: transparent;
+  }
 }
 
 .row {

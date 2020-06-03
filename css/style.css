@@ -13,7 +13,7 @@
   max-width: 23%; }
 
 .col-31 {
-  max-width: 31.5%; }
+  flex-basis: 31.5%; }
 
 .col-40 {
   flex-basis: 40%; }
@@ -70,6 +70,11 @@ html {
     font-size: 0.9375rem;
     color: #0842b7;
     border: 1px solid #0842b7;
+    background-color: transparent; }
+  .button--silver {
+    font-size: 1rem;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     background-color: transparent; }
 
 .row {
@@ -360,13 +365,31 @@ input, button {
     max-width: 93%; }
     .calculator__quantity:nth-child(2) {
       margin-bottom: 0; }
-  .calculator__button {
+  .calculator .center__button {
     display: flex;
     justify-content: center; }
   .calculator .button--primary {
     padding: 0.9375rem 1.875rem 0.9375rem 1.8125rem;
     max-width: 100%;
     margin: auto; }
+
+.training {
+  padding-top: 7.6rem;
+  padding-bottom: 7.3rem;
+  background-image: url("../img/bg-training.png"), radial-gradient(circle 677px at center, #03256c 0%, #061826 100%); }
+  .training__header {
+    max-width: 460px;
+    margin: auto;
+    margin-bottom: 2.2rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700; }
+  .training .center__button {
+    display: flex;
+    justify-content: center; }
+  .training .button--silver {
+    padding: 15px 33px; }
 
 @media screen and (max-width: 1200px) {
   html {
