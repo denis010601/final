@@ -11,23 +11,29 @@
 }
 
 
-.col-47 {
-  max-width: 47%;
-}
-.col-48 {
-  max-width: 48%;
+.col-23 {
+  max-width: 23%;
+  }
+
+
+.col-31 {
+  max-width: 31.5%;
+  
+  }
+
+.col-40 {
+flex-basis: 40%;
 }
 .col-49 {
-  max-width: 49%;
-}
-.col-50 {
-  max-width: 50%;
+  flex-basis: 49%;
 }
 
-.col-51 {
-  max-width: 51%;
+.col-50 {
+  flex-basis: 50%;
 }
-.col-52 {
-  max-width: 52%;
+
+.col-60 {
+  flex-basis: 60%;
 }
+
 

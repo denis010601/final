@@ -33,13 +33,13 @@ html {
 
 .button {
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: 700;
   outline: none;
   cursor: pointer;
-  &__primary{
-    font-size: 16px;
-    box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32);
+  &--primary{
+    font-size: 1rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(6, 57, 158, 0.32);
     background-color: $primary;
     color: $light;
     border: none;
@@ -48,8 +48,8 @@ html {
       box-shadow: none;
     }
   }
-  &__info {
-    font-size: 15px;
+  &--info {
+    font-size: 0.9375rem;
     color: $primary;
     border: 1px solid $primary;
     background-color: transparent;
@@ -71,4 +71,42 @@ html {
 
 .light {
   font-weight: 300;
+}
+.bold {
+  font-weight: 700;
+}
+
+.section{
+  &-header {
+    margin: 0;
+    text-align: center;
+    color: $dark;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 2.625rem;
+  }
+  &-info {
+    margin: 0;
+    text-align: center;
+    color: $dark;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+}
+
+.label {
+  &__calculator {
+    color: $black;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+}
+
+input, button {
+  outline: none;
+  &:hover, &:active, &:checked {
+    outline: none;
+  }
 }

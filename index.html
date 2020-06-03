@@ -37,8 +37,8 @@
           <p class="description hero__description">Всего за месяц прямо на сессиях создайте своего эффективного торгового робота с нуля!</p>
           <div class="interaction hero__interaction">
             <div class="hero__button">
-              <button class="button button__primary">Начать обучение</button>
-              <button class="button button__info">узнать подробнее</button>
+              <button class="button button--primary">Начать обучение</button>
+              <button class="button button--info">узнать подробнее</button>
             </div>
             <p class="hero__offer">Ваш собственный прибыльный торговый робот за <span class="color__blue">30 дней!</span></p>
           </div>
@@ -50,29 +50,72 @@
     <section class="question">
       <div class="container">
         
-        <div class="row ">
-          <div class="col col-50 top">
+        <div class="row">
+          <div class="col col-40 top">
             <h2 class="title-header question__title-header">Почему робот?</h2>
             <p class="question__info">95 <span class="question__percent color__blue">%</span></p>
             <h3 class="question__description">Увеличение прибыли на финансовых рынках</h3>
             <p class="question__description-info">Отсутствие эмоций у робота позволяет в разы увеличить эффективность</p>
           </div>
-          <div class="question__row col-49">
-            <div class="col col-52 align-start">
+          <div class="row col-49 question__extra">
+            <div class="col col-50 align-start">
               <img src="img/analysis.svg" class="analysis" alt="analysis">
               <p class="question__text-title">Глубокий <span class="light">анализ и скорость</span></p>
               <p class="question__text-info">Полноценный анализ финансовых инструментов по разработанным математическим алгоритмам за доли секунд</p>
             </div>
-            <div class="col col-47 align-start">
+            <div class="col col-50 align-start">
               <img src="img/max.svg" alt="max">
               <p class="question__text-title">Максимальный <span class="light">инструментарий</span></p>
-              <p class="question__text-info">Отслеживайте тысячи финансовых инструментов каждую секунду <br>с минимальными рисками</p>
+              <p class="question__text-info">Отслеживайте тысячи финансовых инструментов каждую секунду с минимальными рисками</p>
             </div>
           </div>
         </div>
         <!-- /.question hero__question -->
       </div>
     </section>
+    <section class="calculator">
+      <div class="container">
+        <h2 class="section-header calculator__section-header">Создайте своего <br>авторского торгового робота</h2>
+        <!-- /.section-header calculator__section-header -->
+        <p class="section-info calculator__section-info">получайте прибыль даже с нулевыми знаниями в сфере алгоритмической торговли</p>
+        <!-- /.section-info calculator__section-info -->
+      
+      <div class="price-list">
+        <div class="calculator__row">
+          <div class="calculator__col col-31">
+            <p class="calculator-header"><span class="bold">Сколько бы Вы заработали</span>, используя торгового робота</p>
+            <p class="calculator-info">Просто введите данные и сравните результаты </p>
+          </div>
+          <div class="calculator__col col-31">
+            <div class="calculator__quantity">
+              <input id="your__quantity" type="text" class="your__quantity">
+              <label for="your__quantity" class="label__calculator">Количество инструментов, по которым Вы торгуете</label>
+            </div>
+            <div class="calculator__quantity">
+              <input id="its__quantity" type="text" class="its__quantity">
+              <label for="its__quantity" class="label__calculator">Количество инструментов Вашего брокера</label>
+            </div>
+          </div>
+          <div class="calculator__col col-31">
+            <div class="calculator__profit">
+              <input id="profit" type="text" class="profit">
+              <label for="profit" class="label__calculator">Средняя месячная прибыль (%)</label>
+            </div>
+            <div class="calculator__profit">
+              <input id="total" type="text" class="total">
+              <label for="total" class="label__calculator">Сумма депозита ($)</label>
+            </div>
+          </div>
+        </div>
+        <div class="calculator__button">
+          <button class="button button--primary">
+            Просчитать прибыль на 2016 год
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- /.calculator -->
   </main>
 </body>
 </html>

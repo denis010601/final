@@ -1,12 +1,19 @@
-@media screen and (max-width:1014px){
+@media screen and (max-width:1200px){
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
-  
+  .question{
+    &__extra{
+      padding: 0;
+    }
+  }
 }
 
 @media screen and (max-width:992px){
-  .col-47, .col-48, .col-49, .col-50, .col-51, .col-52{
+.col-40, .col-49, .col-50{
+  width: 100%;
+}
+.col-31 {
   min-width: 100%;
 }
   .menu {
@@ -21,7 +28,12 @@
   &__info {
     text-align: center;
   }
-  &__row {
+  &__section {
+    &-header {
+      min-width: 100%;
+    }
+  }
+  &__extra {
     text-align: center;
     padding-top: 3rem;
     display: flex;
@@ -38,6 +50,7 @@
     }
   }
   &__text-title {
+    margin-top: 0;
     text-align: center;
     max-width: 100%;
   }
@@ -52,6 +65,49 @@
 }
 .col {
   align-items: center;
+}
+.calculator {
+  br {
+    display: none;
+  }
+
+  
+  &__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__col {
+    width: 100%;
+  }
+  &-header {
+    min-width: 0;
+    max-width: 100%;
+    text-align: center;
+    
+  }
+  &-info {
+    min-width: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+  &__profit {
+    min-width: 0;
+    margin-bottom: 1rem;
+    &:nth-child(2){
+      margin-bottom: 1rem;
+    }
+  }
+  &__quantity{
+    min-width: 0;
+    margin-bottom: 1rem;
+    &:nth-child(2){
+      margin-bottom: 1rem;
+    }
+  }
+  &__col {
+    align-items: flex-start;
+  }
 }
 }
 
