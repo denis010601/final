@@ -378,7 +378,7 @@ input, button {
   padding-bottom: 7.3rem;
   background-image: url("../img/bg-training.png"), radial-gradient(circle 677px at center, #03256c 0%, #061826 100%); }
   .training__header {
-    max-width: 460px;
+    max-width: 28.75rem;
     margin: auto;
     margin-bottom: 2.2rem;
     text-align: center;
@@ -389,7 +389,7 @@ input, button {
     display: flex;
     justify-content: center; }
   .training .button--silver {
-    padding: 15px 33px; }
+    padding: 0.9375rem 2.0625rem; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -520,4 +520,9 @@ input, button {
   .question__info {
     font-size: 15.375rem; }
   .question__percent {
-    font-size: 5rem; } }
+    font-size: 5rem; }
+  .training {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    .training__header {
+      font-size: 1.3rem; } }
