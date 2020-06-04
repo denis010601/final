@@ -10,6 +10,7 @@
 }
 
 @media screen and (max-width:992px){
+  
 .col-40, .col-49, .col-50{
   width: 100%;
 }
@@ -25,6 +26,24 @@
   }
   &__contacts {
     margin-left: 0;
+  }
+}
+.hero {
+  padding-bottom: 8rem;
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    &--primary {
+      padding: 0.9375rem 6.7rem;
+
+    }
+    &--info {
+      padding: 0.9375rem 6.5rem;
+
+    }
   }
 }
 .question {
@@ -115,6 +134,25 @@
     align-items: flex-start;
   }
 }
+.lesson {
+  padding: 2rem 0 2rem;
+  .swiper-pagination {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding-right: 0;
+    &::before {
+      margin-right: 1rem;
+    }
+  }
+  &__number {
+    margin-top: 4rem;
+  }
+  &__task {
+    margin-top: 2rem;
+  }
+  
+}
 }
 
 
@@ -160,6 +198,44 @@
       max-width: 100%;
     }
   }
+  .lesson {
+    &__button {
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin-bottom: 2rem;
+      &--silver {
+        padding: 0.9375rem  6.35rem;
+      }
+      &--primary {
+        padding: 0.9375rem  6.35rem;
+      }
+    }
+    .swiper {
+      &-button-next {
+        right: 8rem;
+        top: 100%;
+        width: 4.5rem;
+        background: url('../img/lesson__b.svg') no-repeat center;
+        &::after {
+          margin-left: 0rem;
+          display: none;
+        }
+      }
+      &-button-prev {
+        left: 8rem;
+        top: 100%;
+        width: 4.5rem;
+        background: url('../img/lesson__b.svg') no-repeat center;
+        transform: rotate(180deg);
+        &::after {
+          margin-left: 0rem;
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width:575px){
@@ -173,6 +249,21 @@
     padding: 10px;
   }
   .hero {
+    padding-bottom: 8rem;
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    &--primary {
+      padding: 0.9375rem 6.7rem;
+      
+    }
+    &--info {
+      padding: 0.9375rem 6.5rem;
+
+    }
     &__name {
       font-size: 2.5rem;
       text-align: center;
@@ -187,6 +278,8 @@
       text-align: center;
       min-width: 100%;
     }
+}
+
 }
 .question {
   &__info {

@@ -1,5 +1,6 @@
 .lesson {
-  padding: 2.85rem 0 10rem;
+  position: relative;
+  padding: 2.85rem 0 7.4rem;
   position: relative;
   background-image:url('../img/lesson-bg.svg'), radial-gradient(circle 1426px at center, #03256c 0%, #061826 100%);
   background-repeat: no-repeat;
@@ -10,9 +11,9 @@
   }
   .swiper-pagination {
     position: relative;
-    top: 75px;
+    top: 4.75rem;
     text-align: right;
-    padding-right: 63px;
+    padding-right: 3.75rem;
     font-weight: 100;
     &::before {
       content: "Номер урока:";
@@ -24,28 +25,28 @@
     }
   }
   &__number {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
-    line-height: 42px;
-    margin-bottom: 2.6rem;
+    line-height: 2.625rem;
+    margin-bottom: 2.7rem;
   }
   &__title {
     margin-bottom: 0.4rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 28.8px;
+    line-height: 1.8rem;
   }
   &__list {
-    padding-left: 30px;
-    max-width: 460px;
+    padding-left: 1.875rem;
+    max-width: 28.75rem;
     color: rgba($light, $alpha: 1.0);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 100;
     
     li {
-      padding-left: 2px;
+      padding-left: 0.5px;
       letter-spacing: 0.2px;
-      margin-bottom: 18.8px;
+      margin-bottom: 1.125rem;
     }
   }
   &__info {
@@ -53,24 +54,92 @@
     margin-left: 1.9rem;
     max-width: 26rem;
     color: #68799a;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
   &__task {
-    margin-top: 223px;
-    font-size: 24px;
+    padding-left: 1rem;
+    margin-top: 8.625rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 28.8px;
+    line-height: 1.8rem;
     text-align: left;
+    &-list {
+      padding-left: 2.1875rem;
+    }
+    &-home {
+      position: relative;
+      padding-left: 0.625rem;
+      padding-bottom: 4.1875rem;
+      max-width: 26.875rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8rem;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        background-color: $darkblue;
+      }
+    }
+    
   }
-}
+  &__bonus {
+    margin-top: 2.25rem;
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+  }
+  .bonus {
+    &__img {
+      margin-top: -0.3125rem;
+    }
+    &__header {
+      margin-bottom: 0;
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-top: 0.9rem;
+      color: $blackgray;
+    }
+    &__title {
+      padding-top: 0.4rem;
+      margin-left: 1.95rem;
+      max-width: 21.25rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem;
+      
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    max-width: 35rem;
+    margin: auto;
+    margin-top: 4.5rem;
+  }
+  .button {
+    &--silver {
+      font-size: 0.95rem;
+      padding: 0.9375rem  3.35rem;
+    }
+    &--primary {
+      font-size: 1rem;
+      padding: 0.9375rem  3.25rem;
+    }
+  }
 .swiper-pagination-bullet {
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
   text-align: center;
   margin: 0;
-  line-height: 35px;
+  line-height: 2.1875rem;
   font-size: 1rem;
   color:$light;
   opacity: 1;
@@ -91,4 +160,28 @@
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 -0.2px;
+}
+.swiper {
+  &-button-next {
+    right: 1.4rem;
+    top: 96.5%;
+    width: 3.5rem;
+    background: url('../img/lesson__b.svg') no-repeat center;
+    &::after {
+      margin-left: 0rem;
+      display: none;
+    }
+  }
+  &-button-prev {
+    left: 1.4rem;
+    top: 96.5%;
+    width: 3.5rem;
+    background: url('../img/lesson__b.svg') no-repeat center;
+    transform: rotate(180deg);
+    &::after {
+      margin-left: 0rem;
+      display: none;
+    }
+  }
+}
 }
