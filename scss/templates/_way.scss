@@ -1,0 +1,77 @@
+.way {
+  padding-top: 7rem;
+  padding-bottom: 7.5rem;
+  &__section {
+    &-header {
+      text-align: center;
+      font-size: 2.3rem;
+      word-spacing: -1px;
+    }
+    &-info {
+      max-width: 23.75rem;
+      margin: auto;
+      margin-top: 1.3rem;
+      margin-bottom: 5.8rem;
+      font-weight: 400;
+      color: $black;
+    }
+    
+    
+  }
+  &__list {
+    max-width: 12.5rem;
+    text-align: center;
+    margin: auto;
+    &-info {
+      margin: 5.75rem auto;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.8rem;
+      &:nth-last-child(1) {
+        margin-bottom: 5.5rem;
+      }
+    }
+  }
+  &__video {
+    padding: 1rem;
+    display: flex;
+    
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background:#f2f2f2 url('../img/wey__video.jpg');
+    background-size: cover;
+    &-icon {
+      cursor: pointer;
+    }
+  }
+  &__sample {
+    margin-top: 4.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: $dark;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    &-info {
+      margin: auto;
+      margin-bottom: 2.6rem;
+      text-align: center;
+      max-width: 36.25rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem;
+      color: $black;
+    }
+  }
+  &__button {
+    max-width: 35rem;
+    margin: auto;
+    
+  }
+  .button {
+    &--primary {
+      padding: 0.9375rem 2.5625rem;
+    }
+  }
+}

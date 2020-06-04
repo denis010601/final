@@ -153,6 +153,41 @@
   }
   
 }
+.way {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  &__section {
+    &-info {
+      margin-bottom: 3rem;
+    }
+  }
+  &__list {
+    &-info {
+      margin: 3.2rem 0;
+      &:nth-last-child(1){
+        margin-bottom: 0rem;
+      }
+    }
+  }
+  &__video {
+    padding:0rem;
+    max-width: 50rem;
+    background: url('../img/wey__video-min.jpg') no-repeat center;
+  }
+  &__sample {
+    margin-top: 1rem;
+  }
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--primary {
+      padding: 0.9375rem 0rem;
+      font-size: 0.8rem;
+    }
+  }
+}
 }
 
 
@@ -248,8 +283,12 @@
     margin: 0;
     padding: 10px;
   }
+
   .hero {
     padding-bottom: 8rem;
+    &__name {
+      font-size: 2.5rem;
+    }
   &__button {
     display: flex;
     flex-direction: column;
