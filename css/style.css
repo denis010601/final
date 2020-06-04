@@ -498,8 +498,9 @@ input, button {
       .way__list-info:nth-last-child(1) {
         margin-bottom: 5.5rem; }
   .way__video {
-    padding: 1rem;
+    padding: 10rem;
     display: flex;
+    max-width: 59rem;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -545,7 +546,8 @@ input, button {
     top: 4.75rem;
     text-align: right;
     padding-right: 3.75rem;
-    font-weight: 100; }
+    font-weight: 100;
+    z-index: 3; }
     .lesson .swiper-pagination::before {
       content: "Номер урока:";
       margin-right: 3.2rem;
@@ -647,7 +649,8 @@ input, button {
     font-size: 1rem;
     color: #ffffff;
     opacity: 1;
-    background-color: transparent; }
+    background-color: transparent;
+    z-index: 5; }
   .lesson .swiper-pagination-bullet-active {
     background-color: #06bee1; }
   .lesson .swiper-container-horizontal {
@@ -787,7 +790,7 @@ input, button {
       .way__list-info:nth-last-child(1) {
         margin-bottom: 0rem; }
     .way__video {
-      padding: 0rem;
+      padding: 6rem;
       max-width: 50rem;
       background: url("../img/wey__video-min.jpg") no-repeat center; }
     .way__sample {

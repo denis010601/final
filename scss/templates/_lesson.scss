@@ -15,6 +15,7 @@
     text-align: right;
     padding-right: 3.75rem;
     font-weight: 100;
+    z-index: 3;
     &::before {
       content: "Номер урока:";
       margin-right: 3.2rem;
@@ -144,6 +145,7 @@
   color:$light;
   opacity: 1;
   background-color: transparent;
+  z-index: 5;
 }
 .swiper-pagination-bullet-active {
   background-color: $blue;
