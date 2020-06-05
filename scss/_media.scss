@@ -246,7 +246,22 @@
       max-width: 50rem;
       background: url('../img/reviews__video-min.jpg') no-repeat center;
     }
-
+}
+.results {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  &__section {
+    &-header {
+      text-align: center;
+    }
+    &-info {
+      text-align: center;
+    }
+  }
+  &__col{
+    margin-top: 5rem;
+    text-align: center;
+  }
 }
 }
 
