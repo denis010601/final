@@ -1,0 +1,23 @@
+.condition {
+  padding: 7.5rem 0 7.5rem;
+  background: #eaf1f7 url('../img/condition.png') no-repeat right;
+
+    &__header {
+    max-width: 330px;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;     
+    text-align: center;
+    color: $black;
+  }
+  &__button {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    &--primary {
+      padding: 0.9375rem 2.5625rem;
+    }
+  }
+}

@@ -962,6 +962,23 @@ input, button {
       font-weight: 300;
       line-height: 1.5rem; }
 
+.condition {
+  padding: 7.5rem 0 7.5rem;
+  background: #eaf1f7 url("../img/condition.png") no-repeat right; }
+  .condition__header {
+    max-width: 330px;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #000000; }
+  .condition__button {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center; }
+  .condition .button--primary {
+    padding: 0.9375rem 2.5625rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; }
@@ -1112,6 +1129,8 @@ input, button {
   .edge {
     padding-top: 2rem;
     padding-bottom: 1rem; }
+  .price__double {
+    display: none; }
   .price__col::before, .price__col::after {
     display: none; }
   .reviews {
@@ -1130,7 +1149,10 @@ input, button {
       text-align: center; }
     .results__col {
       margin-top: 5rem;
-      text-align: center; } }
+      text-align: center; }
+  .condition {
+    padding: 7.5rem 0 7.5rem;
+    background: #eaf1f7; } }
 
 @media screen and (max-width: 768px) {
   html {

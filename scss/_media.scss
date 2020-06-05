@@ -232,6 +232,9 @@
     padding-bottom: 1rem;
   }
   .price {
+    &__double {
+      display: none;
+    }
     &__col {
       &::before, &::after {
         display: none;
@@ -262,6 +265,10 @@
     margin-top: 5rem;
     text-align: center;
   }
+}
+.condition {
+  padding: 7.5rem 0 7.5rem;
+  background: #eaf1f7 
 }
 }
 
