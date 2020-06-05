@@ -21,6 +21,9 @@
 .col-31 {
   flex-basis: 31.5%; }
 
+.col-30 {
+  flex-basis: 30%; }
+
 .col-40 {
   flex-basis: 40%; }
 
@@ -779,6 +782,34 @@ input, button {
       margin-left: 0rem;
       display: none; }
 
+.edge {
+  padding-top: 6.9rem;
+  padding-bottom: 3.7rem;
+  background: #eaf1f7; }
+  .edge__section-header {
+    margin-bottom: 3.4rem; }
+  .edge__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem; }
+    .edge__row-header {
+      text-align: center;
+      margin-bottom: 1.75rem; }
+  .edge__col {
+    display: flex;
+    align-items: center; }
+    .edge__col-header {
+      margin-top: 1.1rem;
+      margin-bottom: 0;
+      font-size: 1.01rem;
+      font-weight: 700; }
+    .edge__col-info {
+      margin-top: 0.25rem;
+      max-width: 19rem;
+      text-align: center;
+      font-size: 1.01rem;
+      line-height: 1.5rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; }
@@ -925,7 +956,10 @@ input, button {
       margin-top: 1.5rem; }
     .preview__col-title {
       text-align: center;
-      max-width: 16rem; } }
+      max-width: 16rem; }
+  .edge {
+    padding-top: 2rem;
+    padding-bottom: 1rem; } }
 
 @media screen and (max-width: 768px) {
   html {
