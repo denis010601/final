@@ -11,7 +11,7 @@
 
 @media screen and (max-width:992px){
   
-.col-40, .col-49, .col-50{
+.col-25,.col-40, .col-48-6,.col-49, .col-50{
   width: 100%;
 }
 .col-31 {
@@ -185,6 +185,25 @@
     &--primary {
       padding: 0.9375rem 0rem;
       font-size: 0.8rem;
+    }
+  }
+}
+.operation {
+  &__card{
+    justify-content: left;
+    text-align: left;
+    &-header {
+      max-width: 31.25rem;
+      text-align: left;
+    }
+    &-info {
+      max-width: 18.75rem; 
+    }
+  }
+  &__col {
+    &-info {
+      text-align: center;
+      max-width: 31.25rem;
     }
   }
 }

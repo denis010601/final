@@ -12,11 +12,17 @@
 .col-23 {
   max-width: 23%; }
 
+.col-25 {
+  flex-basis: 25%; }
+
 .col-31 {
   flex-basis: 31.5%; }
 
 .col-40 {
   flex-basis: 40%; }
+
+.col-48-6 {
+  flex-basis: 48.6%; }
 
 .col-49 {
   flex-basis: 49%; }
@@ -509,16 +515,16 @@ input, button {
     .way__video-icon {
       cursor: pointer; }
   .way__sample {
-    margin-top: 4.5rem;
+    margin-top: 4.65rem;
     margin-bottom: 1.5rem;
     text-align: center;
     color: #0f1c2e;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.8rem; }
     .way__sample-info {
       margin: auto;
-      margin-bottom: 2.6rem;
+      margin-bottom: 2.8rem;
       text-align: center;
       max-width: 36.25rem;
       font-size: 1rem;
@@ -530,6 +536,71 @@ input, button {
     margin: auto; }
   .way .button--primary {
     padding: 0.9375rem 2.5625rem; }
+
+.operation {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 6rem; }
+  .operation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    margin: auto;
+    height: 1px;
+    background-color: #eaf1f7; }
+  .operation::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    margin: auto;
+    height: 1px;
+    background-color: #eaf1f7; }
+  .operation__section-header {
+    margin-bottom: 4rem; }
+  .operation__card {
+    color: #ffffff;
+    padding-top: 9.5rem;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 4.3rem; }
+    .operation__card:nth-child(1) {
+      background: url("../img/operation__1.png") no-repeat right bottom, url("../img/bg_operation.svg") no-repeat bottom left, radial-gradient(circle 611px at center, #03256c 0%, #061826 100%); }
+    .operation__card:nth-child(2) {
+      background: url("../img/bg_oper.png") no-repeat bottom right, url("../img/operation_2.png") no-repeat right, radial-gradient(circle 611px at center, #03256c 0%, #061826 100%); }
+    .operation__card-header {
+      margin-bottom: 0.5rem;
+      max-width: 12.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.8125rem; }
+    .operation__card-info {
+      max-width: 16.25rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem; }
+  .operation__col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .operation__col-img {
+      min-height: 4.6875rem;
+      display: flex;
+      align-items: center; }
+    .operation__col-header {
+      margin-top: 2.7rem;
+      margin-bottom: 1.6rem; }
+    .operation__col-info {
+      margin-top: 0;
+      max-width: 15.625rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem; }
 
 .lesson {
   position: relative;
@@ -686,7 +757,7 @@ input, button {
     padding: 0; } }
 
 @media screen and (max-width: 992px) {
-  .col-40, .col-49, .col-50 {
+  .col-25, .col-40, .col-48-6, .col-49, .col-50 {
     width: 100%; }
   .col-31 {
     min-width: 100%; }
@@ -802,7 +873,18 @@ input, button {
       align-items: center; }
       .way .button--primary {
         padding: 0.9375rem 0rem;
-        font-size: 0.8rem; } }
+        font-size: 0.8rem; }
+  .operation__card {
+    justify-content: left;
+    text-align: left; }
+    .operation__card-header {
+      max-width: 31.25rem;
+      text-align: left; }
+    .operation__card-info {
+      max-width: 18.75rem; }
+  .operation__col-info {
+    text-align: center;
+    max-width: 31.25rem; } }
 
 @media screen and (max-width: 768px) {
   html {
