@@ -231,6 +231,13 @@
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
+  .price {
+    &__col {
+      &::before, &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 
@@ -312,6 +319,20 @@
           display: none;
         }
       }
+    }
+  }
+  .price {
+    padding-top: 2rem;
+    &__section {
+      &-info {
+        max-width: 40rem;
+      }
+    }
+    &__list {
+      min-height: 14rem;
+    }
+    &__row {
+      flex-direction: column;
     }
   }
 }

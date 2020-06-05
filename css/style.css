@@ -24,6 +24,9 @@
 .col-30 {
   flex-basis: 30%; }
 
+.col-32 {
+  flex-basis: 32%; }
+
 .col-40 {
   flex-basis: 40%; }
 
@@ -810,6 +813,59 @@ input, button {
       font-size: 1.01rem;
       line-height: 1.5rem; }
 
+.price {
+  padding-top: 7rem;
+  padding-bottom: 3rem; }
+  .price__section-header {
+    margin-bottom: 1.6rem; }
+  .price__section-info {
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center; }
+  .price__row {
+    display: flex;
+    justify-content: space-between; }
+  .price__col {
+    text-align: center;
+    position: relative; }
+    .price__col-info {
+      margin-top: 0;
+      margin-bottom: 0rem;
+      font-size: 24px;
+      font-weight: 700;
+      color: #06bee1; }
+    .price__col:nth-child(2)::before {
+      content: '';
+      position: absolute;
+      background-color: #dde6ec;
+      width: 1px;
+      height: 100%;
+      left: 0;
+      top: 0; }
+    .price__col:nth-child(2)::after {
+      content: '';
+      position: absolute;
+      background-color: #eaf1f7;
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: 0; }
+  .price__list {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 1rem auto 0;
+    max-width: 220px;
+    min-height: 238px; }
+    .price__list li {
+      list-style-type: none;
+      margin-top: 1rem;
+      line-height: 28.8px; }
+  .price .button--info {
+    padding: 15px 52px;
+    font-weight: 700; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; }
@@ -959,7 +1015,9 @@ input, button {
       max-width: 16rem; }
   .edge {
     padding-top: 2rem;
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem; }
+  .price__col::before, .price__col::after {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -1016,7 +1074,15 @@ input, button {
     transform: rotate(180deg); }
     .lesson .swiper-button-prev::after {
       margin-left: 0rem;
-      display: none; } }
+      display: none; }
+  .price {
+    padding-top: 2rem; }
+    .price__section-info {
+      max-width: 40rem; }
+    .price__list {
+      min-height: 14rem; }
+    .price__row {
+      flex-direction: column; } }
 
 @media screen and (max-width: 575px) {
   html {
