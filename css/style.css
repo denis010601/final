@@ -12,6 +12,9 @@
 .col-23 {
   max-width: 23%; }
 
+.col-23-fb {
+  flex-basis: 23%; }
+
 .col-25 {
   flex-basis: 25%; }
 
@@ -601,6 +604,32 @@ input, button {
       font-size: 1rem;
       font-weight: 300;
       line-height: 1.5rem; }
+    .operation__col-title {
+      font-size: 1rem;
+      font-weight: 300; }
+
+.preview {
+  padding-top: 6.75rem;
+  padding-bottom: 6.55rem;
+  background: url("../img/preview.jpg") no-repeat bottom right;
+  background-size: cover; }
+  .preview__section-header {
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 0; }
+  .preview__col-header {
+    margin-top: 6.45rem;
+    margin-bottom: 0;
+    font-size: 2.3rem;
+    font-weight: 700; }
+  .preview__col-info {
+    margin-top: 1.9rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 28.8px; }
+  .preview__col-title {
+    margin-top: 0rem;
+    max-width: 11rem; }
 
 .lesson {
   position: relative;
@@ -669,7 +698,7 @@ input, button {
       max-width: 26.875rem;
       font-size: 1rem;
       font-weight: 300;
-      line-height: 1.8rem; }
+      line-height: 1.5rem; }
       .lesson__task-home::after {
         content: "";
         position: absolute;
@@ -680,7 +709,7 @@ input, button {
         height: 1px;
         background-color: #26556c; }
   .lesson__bonus {
-    margin-top: 2.25rem;
+    margin-top: 2.45rem;
     margin-bottom: 0;
     padding-left: 1.2rem; }
   .lesson .bonus__img {
@@ -757,7 +786,7 @@ input, button {
     padding: 0; } }
 
 @media screen and (max-width: 992px) {
-  .col-25, .col-40, .col-48-6, .col-49, .col-50 {
+  .col-23-fb, .col-25, .col-40, .col-48-6, .col-49, .col-50 {
     width: 100%; }
   .col-31 {
     min-width: 100%; }
@@ -808,8 +837,6 @@ input, button {
   .calculator {
     padding-top: 1rem;
     padding-bottom: 3rem; }
-    .calculator::before {
-      display: none; }
     .calculator br {
       display: none; }
     .calculator__row {
@@ -874,17 +901,31 @@ input, button {
       .way .button--primary {
         padding: 0.9375rem 0rem;
         font-size: 0.8rem; }
-  .operation__card {
-    justify-content: left;
-    text-align: left; }
-    .operation__card-header {
-      max-width: 31.25rem;
+  .operation {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    .operation__card {
+      justify-content: left;
       text-align: left; }
-    .operation__card-info {
-      max-width: 18.75rem; }
-  .operation__col-info {
-    text-align: center;
-    max-width: 31.25rem; } }
+      .operation__card-header {
+        max-width: 31.25rem;
+        text-align: left; }
+      .operation__card-info {
+        max-width: 18.75rem; }
+    .operation__col-info {
+      text-align: center;
+      max-width: 31.25rem; }
+  .preview {
+    padding-top: 1.5rem;
+    padding: 2rem; }
+    .preview__section-header {
+      text-align: center;
+      margin: auto; }
+    .preview__col-header {
+      margin-top: 1.5rem; }
+    .preview__col-title {
+      text-align: center;
+      max-width: 16rem; } }
 
 @media screen and (max-width: 768px) {
   html {

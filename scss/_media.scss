@@ -11,7 +11,7 @@
 
 @media screen and (max-width:992px){
   
-.col-25,.col-40, .col-48-6,.col-49, .col-50{
+  .col-23-fb,.col-25,.col-40, .col-48-6,.col-49, .col-50{
   width: 100%;
 }
 .col-31 {
@@ -91,9 +91,7 @@
 .calculator {
   padding-top: 1rem;
   padding-bottom: 3rem;
-  &::before {
-    display: none;
-  }
+  
   br {
     display: none;
   }
@@ -189,6 +187,8 @@
   }
 }
 .operation {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   &__card{
     justify-content: left;
     text-align: left;
@@ -207,6 +207,26 @@
     }
   }
 }
+  .preview {
+    padding-top: 1.5rem;
+    padding: 2rem;
+    &__section {
+      &-header {
+        
+        text-align: center;
+        margin: auto;
+      }
+    }
+    &__col {
+      &-header {
+        margin-top: 1.5rem;
+      }
+      &-title {
+        text-align: center;
+        max-width: 16rem;
+      }
+    }
+  }
 }
 
 
