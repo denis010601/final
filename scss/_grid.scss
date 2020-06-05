@@ -9,7 +9,9 @@
   display: flex;
   flex-direction: column;
 }
-
+.col-20 {
+  max-width: 20%;
+  }
 
 .col-23 {
   max-width: 23%;
@@ -37,6 +39,9 @@
 .col-33 {
   flex-basis: 33%;
 }  
+.col-33-fd {
+  max-width: 33%;
+}  
 
 .col-40 {
 flex-basis: 40%;
@@ -52,8 +57,15 @@ flex-basis: 40%;
   flex-basis: 50%;
 }
 
+.col-67 {
+  flex-basis: 67%;
+}
 .col-60 {
   flex-basis: 60%;
+}
+
+.col-72 {
+  flex-basis: 72%;
 }
 
 

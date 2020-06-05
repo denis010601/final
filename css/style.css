@@ -9,6 +9,9 @@
   display: flex;
   flex-direction: column; }
 
+.col-20 {
+  max-width: 20%; }
+
 .col-23 {
   max-width: 23%; }
 
@@ -30,6 +33,9 @@
 .col-33 {
   flex-basis: 33%; }
 
+.col-33-fd {
+  max-width: 33%; }
+
 .col-40 {
   flex-basis: 40%; }
 
@@ -42,8 +48,14 @@
 .col-50 {
   flex-basis: 50%; }
 
+.col-67 {
+  flex-basis: 67%; }
+
 .col-60 {
   flex-basis: 60%; }
+
+.col-72 {
+  flex-basis: 72%; }
 
 body {
   padding: 0;
@@ -892,6 +904,8 @@ input, button {
   .bid__form {
     flex-direction: column;
     align-items: center; }
+  .bid .form__input {
+    width: 22.625rem; }
   .bid .button {
     margin-top: 1.8rem; }
     .bid .button--primary {
@@ -978,6 +992,93 @@ input, button {
     justify-content: center; }
   .condition .button--primary {
     padding: 0.9375rem 2.5625rem; }
+
+.pin {
+  padding: 6.5rem 0 7.4rem;
+  background-image: radial-gradient(circle 698px at center, #03256c 0%, #061826 100%); }
+  .pin__dialog-header {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center; }
+  .pin__dialog-info {
+    max-width: 27.5rem;
+    margin: auto;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #ffffff; }
+  .pin__form {
+    justify-content: space-between;
+    align-items: center; }
+  .pin .form__input {
+    width: 16.4rem; }
+  .pin .button {
+    margin-top: 1.8rem; }
+    .pin .button--primary {
+      padding: 0.9375rem 2.7rem; }
+
+.footer {
+  padding: 6.1rem 0 4rem; }
+  .footer__section-header {
+    color: #0f1c2e;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.8px; }
+  .footer__text {
+    color: #0f1c2e;
+    max-width: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.56rem; }
+  .footer__list {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    text-align: center; }
+    .footer__list::before {
+      content: '';
+      position: absolute;
+      top: -2.1875rem;
+      left: 0;
+      height: 1px;
+      width: 80%;
+      background-color: #eaf1f7; }
+    .footer__list li {
+      margin: 0.65rem 0 0;
+      color: #777777;
+      list-style-type: none;
+      font-weight: 400; }
+  .footer .mailing {
+    margin-top: 1rem;
+    width: 16.43rem;
+    height: 3rem;
+    padding-left: 1rem;
+    border-radius: 4px;
+    border: 1px solid #cfdeee;
+    background: url("../img/mail.svg") no-repeat center right;
+    background-position: 93%; }
+    .footer .mailing::-moz-placeholder {
+      font-size: 1rem;
+      font-weight: 300; }
+    .footer .mailing:-ms-input-placeholder {
+      font-size: 1rem;
+      font-weight: 300; }
+    .footer .mailing::-ms-input-placeholder {
+      font-size: 1rem;
+      font-weight: 300; }
+    .footer .mailing::placeholder {
+      font-size: 1rem;
+      font-weight: 300; }
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.7rem; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1152,7 +1253,25 @@ input, button {
       text-align: center; }
   .condition {
     padding: 7.5rem 0 7.5rem;
-    background: #eaf1f7; } }
+    background: #eaf1f7; }
+  .pin {
+    padding: 2rem 0 3rem; }
+    .pin__form {
+      flex-direction: column; }
+    .pin .form__input {
+      width: 22.625rem; }
+    .pin .form .button {
+      margin-top: 1.8rem; }
+      .pin .form .button--primary {
+        padding: 0.9375rem 5.7rem; }
+  .footer {
+    padding: 0 0 2rem; }
+    .footer__text {
+      text-align: center;
+      max-width: 10rem; }
+    .footer__social {
+      justify-content: space-between;
+      width: 20rem; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -1267,7 +1386,6 @@ input, button {
     border: none;
     margin-top: 1.35rem;
     border-radius: 4px;
-    width: 22.625rem;
     font-size: 1.1875rem;
     font-weight: 400; }
     .form__input::-moz-placeholder {

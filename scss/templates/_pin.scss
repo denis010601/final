@@ -1,0 +1,38 @@
+.pin {
+  padding: 6.5rem 0 7.4rem;
+background-image: radial-gradient(circle 698px at center, #03256c 0%, #061826 100%);
+&__dialog {
+  &-header {
+    margin-bottom: 1.5rem;
+    color: $light;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  &-info {
+    max-width: 27.5rem;
+    margin: auto;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: $light;
+  }
+}
+&__form {
+  justify-content: space-between;
+  align-items: center;
+}
+.form {
+  &__input {
+    width: 16.4rem;
+  }
+}
+.button {
+  margin-top: 1.8rem;
+  &--primary {
+    padding: 0.9375rem 2.7rem;
+  }
+}
+}
