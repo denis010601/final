@@ -894,6 +894,44 @@ input, button {
     .bid .button--primary {
       padding: 0.9375rem 6.25rem; }
 
+.reviews {
+  position: relative;
+  padding-top: 6.7rem;
+  padding-bottom: 7rem; }
+  .reviews::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    margin: auto;
+    height: 1px;
+    background-color: #eaf1f7; }
+  .reviews__section-header {
+    margin-bottom: 3.9rem; }
+  .reviews__video {
+    padding: 10rem;
+    display: flex;
+    max-width: 59rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2 url("../img/reviews__video.jpg") no-repeat center;
+    background-size: cover; }
+    .reviews__video-icon {
+      cursor: pointer; }
+  .reviews__client-name {
+    margin-top: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem; }
+  .reviews__client-info {
+    max-width: 32.5rem;
+    margin: auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; }
@@ -1045,7 +1083,14 @@ input, button {
     padding-top: 2rem;
     padding-bottom: 1rem; }
   .price__col::before, .price__col::after {
-    display: none; } }
+    display: none; }
+  .reviews {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    .reviews__video {
+      padding: 6rem;
+      max-width: 50rem;
+      background: url("../img/reviews__video-min.jpg") no-repeat center; } }
 
 @media screen and (max-width: 768px) {
   html {

@@ -21,5 +21,9 @@ prevEl: '.lesson .swiper-button-prev',
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   },
-});
+})
+var swiper = new Swiper('.reviews .swiper-container', {
+  loop: true,
+  centeredSlides: true,
+})
 })

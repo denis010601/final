@@ -1,0 +1,46 @@
+.reviews {
+  position: relative;
+  padding-top: 6.7rem;
+  padding-bottom: 7rem;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    margin: auto;
+    height: 1px;
+    background-color: #eaf1f7;
+  }
+  &__section-header {
+    margin-bottom: 3.9rem;
+  }
+  &__video {
+    padding: 10rem;
+    display: flex;
+    max-width: 59rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background:#f2f2f2 url('../img/reviews__video.jpg') no-repeat center;
+    background-size: cover;
+    &-icon {
+      cursor: pointer;
+    }
+  }
+  &__client {
+    &-name {
+      margin-top: 4.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &-info {
+      max-width: 32.5rem;
+      margin: auto;
+      text-align: center;
+      font-weight: 300;
+      line-height: 1.5rem;
+    }
+  }
+}

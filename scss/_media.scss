@@ -238,8 +238,17 @@
       }
     }
   }
-}
+  .reviews  {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &__video {
+      padding:6rem;
+      max-width: 50rem;
+      background: url('../img/reviews__video-min.jpg') no-repeat center;
+    }
 
+}
+}
 
 @media screen and (max-width:768px){
   html {
