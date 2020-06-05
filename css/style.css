@@ -815,11 +815,11 @@ input, button {
 
 .price {
   padding-top: 7rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 7.5rem; }
   .price__section-header {
     margin-bottom: 1.6rem; }
   .price__section-info {
-    max-width: 350px;
+    max-width: 21.875rem;
     margin: auto;
     margin-bottom: 3rem;
     text-align: center; }
@@ -832,7 +832,7 @@ input, button {
     .price__col-info {
       margin-top: 0;
       margin-bottom: 0rem;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 700;
       color: #06bee1; }
     .price__col:nth-child(2)::before {
@@ -856,15 +856,43 @@ input, button {
     text-align: center;
     padding: 0;
     margin: 1rem auto 0;
-    max-width: 220px;
-    min-height: 238px; }
+    max-width: 13.75rem;
+    min-height: 14.875rem; }
     .price__list li {
       list-style-type: none;
       margin-top: 1rem;
-      line-height: 28.8px; }
+      line-height: 1.8rem; }
   .price .button--info {
-    padding: 15px 52px;
+    padding: 0.9375rem 3.25rem;
     font-weight: 700; }
+
+.bid {
+  padding: 6.38rem 0 7.65rem;
+  background: url("../img/bg__bid.jpg"); }
+  .bid__dialog {
+    max-width: 26.875rem;
+    margin: auto; }
+    .bid__dialog-header {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center; }
+    .bid__dialog-info {
+      margin: auto;
+      margin-bottom: 1.38rem;
+      max-width: 24.6875rem;
+      font-size: 1rem;
+      text-align: center;
+      color: #ffffff;
+      font-weight: 300;
+      line-height: 1.5rem; }
+  .bid__form {
+    flex-direction: column;
+    align-items: center; }
+  .bid .button {
+    margin-top: 1.8rem; }
+    .bid .button--primary {
+      padding: 0.9375rem 6.25rem; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1123,3 +1151,27 @@ input, button {
     padding-bottom: 2rem; }
     .training__header {
       font-size: 1.3rem; } }
+
+.form {
+  display: flex; }
+  .form__input {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    border: none;
+    margin-top: 1.35rem;
+    border-radius: 4px;
+    width: 22.625rem;
+    font-size: 1.1875rem;
+    font-weight: 400; }
+    .form__input::-moz-placeholder {
+      font-size: 1.1875rem;
+      font-weight: 300; }
+    .form__input:-ms-input-placeholder {
+      font-size: 1.1875rem;
+      font-weight: 300; }
+    .form__input::-ms-input-placeholder {
+      font-size: 1.1875rem;
+      font-weight: 300; }
+    .form__input::placeholder {
+      font-size: 1.1875rem;
+      font-weight: 300; }

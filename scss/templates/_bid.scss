@@ -1,0 +1,34 @@
+.bid {
+  padding: 6.38rem 0 7.65rem;
+  background: url('../img/bg__bid.jpg');
+  &__dialog {
+    max-width: 26.875rem;
+    margin: auto;
+    &-header {
+      color: $light;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    &-info {
+      margin: auto;
+      margin-bottom: 1.38rem;
+      max-width: 24.6875rem;
+      font-size: 1rem;
+      text-align: center;
+      color: $light;
+      font-weight: 300;
+      line-height: 1.5rem;
+    }
+  }
+  &__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    margin-top: 1.8rem;
+    &--primary {
+      padding: 0.9375rem 6.25rem;
+    }
+  }
+}

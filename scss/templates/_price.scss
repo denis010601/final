@@ -1,12 +1,12 @@
 .price {
   padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding-bottom: 7.5rem;
   &__section{ 
     &-header {
       margin-bottom: 1.6rem;
     }
     &-info {
-      max-width: 350px;
+      max-width: 21.875rem;
       margin: auto;
       margin-bottom: 3rem;
       text-align: center;
@@ -22,7 +22,7 @@
     &-info {
       margin-top: 0;
       margin-bottom: 0rem;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 700;
       color: $blue;
     }
@@ -52,20 +52,20 @@
     text-align: center;
     padding: 0;
     margin: 1rem auto 0;
-    max-width: 220px;
-    min-height: 238px;
+    max-width: 13.75rem;
+    min-height: 14.875rem;
     
     li {
       list-style-type: none;
       margin-top: 1rem;
-      line-height: 28.8px;
+      line-height: 1.8rem;
     }
     
   }
   .button {
     
     &--info {
-      padding: 15px 52px;
+      padding: 0.9375rem 3.25rem;
       font-weight: 700;
     }
   }
