@@ -22,7 +22,7 @@ background-image: radial-gradient(circle 698px at center, #03256c 0%, #061826 10
 }
 &__form {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .form {
   &__input {
@@ -30,7 +30,6 @@ background-image: radial-gradient(circle 698px at center, #03256c 0%, #061826 10
   }
 }
 .button {
-  margin-top: 1.8rem;
   &--primary {
     padding: 0.9375rem 2.7rem;
   }

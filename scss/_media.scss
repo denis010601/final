@@ -133,14 +133,19 @@
   }
 }
 .lesson {
-  padding: 2rem 0 2rem;
+  position: relative;
+  padding: 1.7rem 0 2rem;
   .swiper-pagination {
-    position: absolute;
-    top: 0;
+    
+    position: relative;
+    top: 20px;
     text-align: center;
     padding-right: 0;
     &::before {
-      margin-right: 1rem;
+      position: absolute;
+      top: -20px;
+      margin-right: 0;
+      
     }
   }
   &__number {
@@ -192,6 +197,9 @@
   &__card{
     justify-content: left;
     text-align: left;
+      &:nth-child(1) {
+        background: url('../img/min-bgd.png') no-repeat right bottom ,url('../img/bg_operation.svg') no-repeat bottom left,radial-gradient(circle 611px at center, #03256c 0%, #061826 100%);
+      }
     &-header {
       max-width: 31.25rem;
       text-align: left;
@@ -274,6 +282,7 @@
   padding: 2rem 0 3rem;
   &__form {
     flex-direction: column;
+    align-items: center;
   }
   .form {
     
@@ -298,6 +307,7 @@
     justify-content: space-between;
     width: 20rem;
   }
+  
 }
 }
 @media screen and (max-width:768px){
@@ -458,5 +468,19 @@
   &__header {
     font-size: 1.3rem;
   }
+}
+.operation {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__card{
+    justify-content: left;
+    text-align: left;
+      &:nth-child(1) {
+        background:url('../img/bg_operation.svg') no-repeat bottom left,radial-gradient(circle 611px at center, #03256c 0%, #061826 100%);
+      }
+      &:nth-child(2) {
+        background:url('../img/bg_operation.svg') no-repeat bottom left,radial-gradient(circle 611px at center, #03256c 0%, #061826 100%);
+      }
+    }
 }
 }

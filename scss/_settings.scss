@@ -39,7 +39,7 @@ html {
   cursor: pointer;
   &--primary{
     font-size: 1rem;
-    box-shadow: 0 0.75rem 1.5rem rgba(6, 57, 158, 0.32);
+    box-shadow: 0 0.75rem 1.5rem rgba($primary, 0.32);
     background-color: $primary;
     color: $light;
     border: none;
@@ -53,12 +53,20 @@ html {
     color: $primary;
     border: 1px solid $primary;
     background-color: transparent;
+    box-shadow: 0 0.75rem 1.5rem rgba($gray, 0.32);
+    &:hover, &:active, &:checked {
+      box-shadow: none;
+    }
   }
   &--silver {
     font-size: 1rem;
     color: $light;
     border: 1px solid $light;
     background-color: transparent;
+    box-shadow: 0 0.75rem 1.5rem rgba($light, 0.12);
+    &:hover, &:active, &:checked {
+      box-shadow: none;
+    }
   }
 }
 
@@ -122,4 +130,16 @@ input, button {
   &:hover, &:active, &:checked {
     outline: none;
   }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  
+    position: relative;
+    div.invalid {
+      position: absolute;
+      bottom: -19px;
+
+    }
 }

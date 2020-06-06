@@ -168,7 +168,10 @@
     right: 1.4rem;
     top: 96.5%;
     width: 3.5rem;
-    background: url('../img/lesson__b.svg') no-repeat center;
+    background: url('../img/lesson__b.png') no-repeat center;
+    &:hover, &:checked &:active {
+      opacity: 1;
+    }
     &::after {
       margin-left: 0rem;
       display: none;
@@ -178,8 +181,11 @@
     left: 1.4rem;
     top: 96.5%;
     width: 3.5rem;
-    background: url('../img/lesson__b.svg') no-repeat center;
+    background: url('../img/lesson__b.png') no-repeat center;
     transform: rotate(180deg);
+    &:hover, &:checked &:active {
+      opacity: 1;
+    }
     &::after {
       margin-left: 0rem;
       display: none;
