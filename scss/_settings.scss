@@ -140,6 +140,20 @@ input, button {
     div.invalid {
       position: absolute;
       bottom: -19px;
-
+      font-size: 0.9rem;
+      color: $light;
     }
+}
+
+.pin {
+  .input-group {
+
+      position: relative;
+      div.invalid {
+        
+        position: absolute;
+        bottom: -19px;
+        
+      }
+  }
 }

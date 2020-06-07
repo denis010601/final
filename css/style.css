@@ -166,6 +166,14 @@ input, button {
   position: relative; }
   .input-group div.invalid {
     position: absolute;
+    bottom: -19px;
+    font-size: 0.9rem;
+    color: #ffffff; }
+
+.pin .input-group {
+  position: relative; }
+  .pin .input-group div.invalid {
+    position: absolute;
     bottom: -19px; }
 
 .header {
@@ -552,7 +560,7 @@ input, button {
       .way__list-info:nth-last-child(1) {
         margin-bottom: 5.5rem; }
   .way__video {
-    padding: 10rem;
+    min-height: 24.2rem;
     display: flex;
     max-width: 59rem;
     margin: auto;
@@ -956,7 +964,7 @@ input, button {
   .reviews__section-header {
     margin-bottom: 3.9rem; }
   .reviews__video {
-    padding: 10rem;
+    min-height: 24.5rem;
     display: flex;
     max-width: 59rem;
     margin: auto;
@@ -1113,6 +1121,8 @@ input, button {
     padding: 0; } }
 
 @media screen and (max-width: 992px) {
+  .button {
+    box-shadow: none; }
   .col-23-fb, .col-25, .col-40, .col-48-6, .col-49, .col-50 {
     width: 100%; }
   .col-31 {
@@ -1123,6 +1133,11 @@ input, button {
     display: none; }
   .menu__contacts {
     margin-left: 0; }
+  .thank {
+    padding: 1rem; }
+    .thank__text {
+      font-size: 1rem;
+      padding: 0rem; }
   .hero {
     padding-bottom: 8rem; }
     .hero__button {
@@ -1529,3 +1544,29 @@ input, button {
 
 .policy-center {
   justify-content: center; }
+
+.thank {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3.5714rem; }
+  .thank--visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 200; }
+  .thank__text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    max-width: 80rem;
+    background-color: #0842b7;
+    border: 1px solid #0f1c2e;
+    padding: 2.1428rem 3.5714rem; }

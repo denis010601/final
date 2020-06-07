@@ -10,7 +10,9 @@
 }
 
 @media screen and (max-width:992px){
-  
+  .button {
+    box-shadow: none  ;
+  }
   .col-23-fb,.col-25,.col-40, .col-48-6,.col-49, .col-50{
   width: 100%;
 }
@@ -26,6 +28,13 @@
   }
   &__contacts {
     margin-left: 0;
+  }
+}
+.thank {
+  padding: 1rem;
+  &__text {
+    font-size: 1rem;
+    padding: 0rem;
   }
 }
 .hero {
